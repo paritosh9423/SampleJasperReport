@@ -10,15 +10,6 @@
 	<field name="id" class="java.lang.Integer"/>
 	<field name="userName" class="java.lang.String"/>
 	<field name="email" class="java.lang.String"/>
-	<field name="user_id" class="java.lang.Integer">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="user_name" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="email" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -94,7 +85,7 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[$F{user_id}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="120" y="0" width="275" height="20" uuid="9978c830-cf98-456a-b030-d96c07de7854"/>
@@ -106,7 +97,7 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[$F{user_name}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{userName}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" x="395" y="0" width="160" height="20" uuid="35a6355d-8307-4414-bf43-8a7788ec81c3"/>
